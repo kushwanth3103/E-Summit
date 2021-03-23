@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "996691861769",
+    "project_id": "vit-vellores-e-summit-2021",
+    "storage_bucket": "vit-vellores-e-summit-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996691861769:android:14d0a7b2ad2a70ad35f3d8",
+        "android_client_info": {
+          "package_name": "com.example.vitvellorese_summit2021"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996691861769-os25qbsg79m5ru34nc3j74vma66s83kh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vitvellorese_summit2021",
+            "certificate_hash": "288fd08c36482b998055eee2d9f881861e740622"
+          }
+        },
+        {
+          "client_id": "996691861769-igkd0erf41819ifilp0m0eu5tq1ij3bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCzXTqv7qKEJaEUWtV9-w3IxcOnqbzL-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996691861769-igkd0erf41819ifilp0m0eu5tq1ij3bj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
