@@ -8,8 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFFFF">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/linearLayout3"
@@ -18,31 +17,37 @@
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.336">
 
             <EditText
                 android:id="@+id/mail_id_log"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/custom_input"
                 android:drawableLeft="@drawable/ic_baseline_mail_24"
+                android:drawablePadding="10dp"
                 android:ems="15"
-                android:hint="enter mail id"
+                android:hint="Enter mail id"
                 android:inputType="textEmailAddress"
+                android:maxWidth="350dp"
                 android:padding="10dp" />
 
             <EditText
                 android:id="@+id/password_log"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_input"
                 android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
                 android:ems="15"
-                android:hint="enter password"
+                android:hint="Enter password"
                 android:inputType="textPassword"
+                android:maxWidth="350dp"
                 android:padding="10dp" />
 
             <TextView
@@ -50,6 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
+                android:maxWidth="350dp"
                 android:text="forget password?"
                 android:textColor="#3790B6"
                 android:textSize="18sp" />

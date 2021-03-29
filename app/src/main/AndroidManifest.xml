@@ -11,8 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".event_infos"></activity>
-        <activity android:name=".password_reset" />
+        <activity android:name=".event_infos" android:screenOrientation="portrait"/>
+        <activity android:name=".password_reset" android:screenOrientation="portrait"/>
         <activity
             android:name=".main_home"
             android:screenOrientation="portrait" />

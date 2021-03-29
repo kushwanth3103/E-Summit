@@ -164,6 +164,11 @@ public class register_fragment extends Fragment {
                         k5++;
                         return;
                     }
+                    if(reg.length()!=9)
+                    {
+                        reg_id.setError("Enter valid Registration number");
+                        k5++;
+                    }
                 }
                 if(flag2==1)
                 {

@@ -17,6 +17,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class home_fragment extends Fragment {
     FirebaseFirestore firebaseFirestore;
@@ -24,6 +25,7 @@ public class home_fragment extends Fragment {
 
     ArrayList<Sponsers_details> data_list_sp;
     SponsersAdapter adapter;
+
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 

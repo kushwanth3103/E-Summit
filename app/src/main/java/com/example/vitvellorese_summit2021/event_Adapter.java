@@ -45,7 +45,7 @@ class event_Adapter extends RecyclerView.Adapter<event_Adapter.ViewHolder_class_
 
         holder.date.setText(data1.get(position).getDate());
         //holder.pos_h.setText(img);
-        Picasso.get().load(img).resize(250,250).into(holder.icon);
+        Picasso.get().load(img).into(holder.icon);
         //holder.image.setImageURI(data.get(position).getImage());
 
     }

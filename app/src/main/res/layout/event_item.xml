@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_gravity="center|center_horizontal|top"
     android:paddingLeft="10dp"
     android:paddingRight="10dp">
 
@@ -47,39 +48,29 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
         android:layout_width="wrap_content"
-        android:layout_height="330dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_height="340dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:background="@drawable/round"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6">
 
-        <ImageView
-            android:id="@+id/event_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/visionx_symbol"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.898"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.118" />
-
         <TextView
             android:id="@+id/title_event"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="24dp"
+            android:scrollHorizontally="false"
             android:text="VisionX"
             android:textColor="#000000"
-            android:textSize="30sp"
+            android:textSize="30dp"
             app:layout_constraintEnd_toStartOf="@+id/event_icon"
-            app:layout_constraintHorizontal_bias="0.256"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -87,20 +78,26 @@
             android:id="@+id/description_event"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:maxWidth="350dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
             android:text="The Entrepreneurship Cell, VIT is a student club that aims at fostering entrepreneurial spirit among the stu nts. E-Cell, VIT is in collaboration with Technology Business Incubator (TBI) under government of India. TBI along with ..."
             android:textColor="#000000"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/show_more"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title_event"
-            app:layout_constraintVertical_bias="0.424" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/show_more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/custom_show_more_buttons"
             android:padding="9dp"
             android:text="Show more"
@@ -108,9 +105,19 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.882"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/event_icon"
-            app:layout_constraintVertical_bias="0.904" />
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/event_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            app:layout_constraintBottom_toTopOf="@+id/description_event"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/visionx_symbol" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -121,7 +128,7 @@
         android:layout_marginLeft="10dp"
         android:text="29th March - - VisionX"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

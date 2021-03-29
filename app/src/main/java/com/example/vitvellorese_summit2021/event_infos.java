@@ -3,6 +3,7 @@ package com.example.vitvellorese_summit2021;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -35,8 +36,7 @@ public class event_infos extends AppCompatActivity {
     String event_name;
     String user_id;
     FirebaseAuth firebaseAuth;
-    String name,reg_no,mail,university;
-
+    String name,reg_no,mail,university,link;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,11 +66,31 @@ public class event_infos extends AppCompatActivity {
                     description.setText(documentSnapshot.getString("matter"));
                     date.setText(documentSnapshot.getString("date_detail"));
                     pa_type.setText(documentSnapshot.getString("participation_type"));
-                    Picasso.get().load(documentSnapshot.getString("icon")).resize(450,450).into(icons);
+                    link=documentSnapshot.getString("link");
+                    if(link.equals(""))
+                    {
+                        register.setText("Comming Soon");
+                    }
+                    Picasso.get().load(documentSnapshot.getString("icon")).into(icons);
                 }
            }
         });
-        user_id= firebaseAuth.getCurrentUser().getUid();
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(link.equals(""))
+                {
+
+                }
+                else
+                {
+                    Uri uri = Uri.parse(link);
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(intent);
+                }
+            }
+        });
+        /*user_id= firebaseAuth.getCurrentUser().getUid();
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,6 +110,6 @@ public class event_infos extends AppCompatActivity {
                     }
                 });
             }
-        });
+        });*/
     }
 }

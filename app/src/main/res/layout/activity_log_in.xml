@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#022039"
-    android:foreground="@drawable/style1"
     tools:context=".log_in">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,10 +29,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
-        android:layout_height="590dp"
+        android:layout_height="0dp"
+        android:alwaysDrawnWithCache="true"
         android:background="@drawable/layout_custom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.8"
         app:layout_constraintStart_toStartOf="parent">
 
 

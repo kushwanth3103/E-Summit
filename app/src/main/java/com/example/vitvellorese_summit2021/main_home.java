@@ -17,6 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class main_home extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
+    ViewPager2 viewPager2_mains;
     FrameLayout frameLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +36,6 @@ public class main_home extends AppCompatActivity {
 
                 switch(item.getItemId())
                 {
-                    case R.id.home:
-                        fragmentClass=home_fragment.class;
-                        break;
                     case R.id.speakers:
                         fragmentClass=speakers.class;
                         break;
@@ -58,7 +56,6 @@ public class main_home extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 FragmentManager fragmentManager=getSupportFragmentManager();
-                frameLayout.removeAllViews();
                 if (fragment != null) {
                     fragmentManager.beginTransaction().replace(R.id.framelayout,fragment).commit();
                 }
